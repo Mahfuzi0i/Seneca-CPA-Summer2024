@@ -1,0 +1,7 @@
+﻿  functions.c
+  main.c
+  mapping.c
+  Generating Code...
+A:\Academic activity\2024\Summer 2024\SFT221\GroupB\summer24-sft221-zcc-b\SourceCode\DeliveryPath\main.c(25,26): warning C4047: 'function': 'Truck *' differs in levels of indirection from 'Truck (*)[3]'
+A:\Academic activity\2024\Summer 2024\SFT221\GroupB\summer24-sft221-zcc-b\SourceCode\DeliveryPath\main.c(25,26): warning C4024: 'getUserInput': different types for formal and actual parameter 2
+  DeliveryPath.vcxproj -> A:\Academic activity\2024\Summer 2024\SFT221\GroupB\summer24-sft221-zcc-b\SourceCode\x64\Debug\DeliveryPath.exe
