@@ -1,0 +1,89 @@
+/*                        
+--------------------------------------------------------------------
+Name           : Abdullah Al Mahfuz
+Email          : aamahfuz@myseneca.ca
+Student ID     : 180377236
+Section        : ZFF
+Date           : 28 May 2024 (Tuesday)
+
+Authenticity Declaration:
+I have done all the coding by myself and only copied the code that
+my professor provided to complete my workshops and assignments.
+--------------------------------------------------------------------
+*/
+
+The first thing that i learned by completing this workshop is class implementation. This workshop allowed me to define 2 class types "Item" and "Bill", to represent individual items and a collection of items respectively. The "Item" class encapsulates details such as the item name, price, and whether the item is taxed or not. The "Bill" class manages a list of "Item" objects and provide functionality to add items and display the bill. I declare the class by using the "class" keyword "identifier" and then the members inside curly {} braces. (i.e. class Item {....}; class Bill{...};). 
+
+i learned to privatize the data through this workshop. The main goal of encapsulation is to prevent uninted access to methods. It ensures that the internal representation of an object is hidden from outside and only necessary information is exposed. I used the keyword "public" to define the public members, and as for the private members, we use "private" keyword. However, i didn't have to declare the private members explicitely as in C++, inside the class, all members are "private" unless explicitely declared as public. So the members that required public access, i put as public members of the intended class. 
+(i.e. class Bill {
+    char m_title[37];  // private member
+    Item* m_items;     // private member
+    int m_noOfItems;   // private member
+    int m_itemsAdded;  // private member
+
+public:
+    void init(const char* title, int noOfItems);              // public member
+    bool add(const char* item_name, double price, bool taxed);// public member
+    void display() const;                                     // public member
+    void deallocate();                                        // public member
+};
+it made sure that the private data were not accessible directly outside the class. And the VisualStudio does a very good job at showing which ones are private and which ones are private. When i was later accessing the private members, it showed a little lock icon to let me know that this is a private member of the class. 
+
+I learned object instantiation for classes "Item" and "Bill". This step is crucial for using the defined classes to create real-world entities that can interact and perform operations. Objects are instances of classes and created using the class constructor to allocate memory and initialize the object. It is vital for avoiding undefined behavior. 
+
+The other most crucial thing that i learned is the process of accessing the private members of a class. I used The return type followed by the class name and :: (double colon) and then member name to first give it access to the class and then to its members. I implemented member functions(methods) within the "Item" and "Bill" classes to interact with the private data members. It allowed to set data, validate objects, and display information. The public member functions provided a way to interact with the private data of the class from outside the class. 
+(i.e. for both Item and Bill class-
+void Item::set(const char* name, double price, bool taxed) {
+    // Set item data
+}
+
+bool Item::isValid() const {
+    // Check validity
+}
+
+void Item::display() const {
+    // Display item data
+}
+
+void Bill::init(const char* title, int noOfItems) {
+    // Initialize bill
+}
+
+bool Bill::add(const char* item_name, double price, bool taxed) {
+    // Add item to bill
+}
+
+void Bill::display() const {
+    // Display bill
+}
+
+void Bill::deallocate() {
+    // Deallocate memory
+}
+
+One key element of the workshop was to format the output to the desired format. The standard library function "iomanip" helped with it. I used setw, setfill, setprecesion functions from this library to format the output to desired way. if the Bill was valid, i was to print the output as -- "| "  
+m_title; left-justified in 36 spaces
+" |"  
+Newline
+so, instead of manually putting the spaces i used "left << setw(36)" to give it the proper space of 36 starting from the left side. 
+another instance was - "|                Total Tax: "  
+totalTax(); right justified in 10 spaces with two digits after the decimal point
+" |"  
+Newline
+so i used "right << setw(10) << fixed << setprecision(2)" to have the desired output printed on the screen as stated above. 
+
+I also got a solid review on memory management via this workshop. I dynamically allocated memory for the "Item" array within the "Bill" class and ensured proper deallocation to prevent memory leaks. I used "new" for allocation and "delete" for deallocation. Memory management is crucial in C++ as the language doesn't manage garbage on its own, so the memory requested during the run time must be freed after we are done with it, otherwise the software is going to run out of memory and cause a crash. my memory management example- 
+void Bill::init(const char* title, int noOfItems) {
+    strncpy(m_title, title, 36);
+    m_title[36] = '\0';
+    m_noOfItems = noOfItems;
+    m_itemsAdded = 0;
+    m_items = new Item[m_noOfItems];
+}
+
+void Bill::deallocate() {  // Letting go of the memory requested during the runtime
+    delete[] m_items;
+    m_items = nullptr;
+}
+
+Overall, this workshop served as a review and a comprehensive understanding of class-based programming in C++, encapsulation, memory managemet, and formatted output. I didn't run into much difficulties while completing this workshop. The instructions were very straightforward and provided me with everything i needed to successfully complete this workshop. 
