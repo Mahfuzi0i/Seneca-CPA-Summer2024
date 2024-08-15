@@ -1,0 +1,37 @@
+/*
+--------------------------------------------------------------------
+Name           : Abdullah Al Mahfuz
+Email          : aamahfuz@myseneca.ca
+Student ID     : 180377236
+Section        : ZFF
+Date           : 08 July 2024 (Monday)
+
+Authenticity Declaration:
+I have done all the coding by myself and only copied the code that
+my professor provided to complete my workshops and assignments.
+--------------------------------------------------------------------
+*/
+
+This workshop allowed me to work hands on with inheritance, function shadowing, accessing shadowed functions, and the use of custom input/output operators. Inheritance allows creating a new class(derived class) that inherits the attributes and the methods from an existing class (base class). In this workshop, the "Truck" class inherits from the "MotorVehicle" class. Truck gains all public and protected members of MotorVehicle reducing code redundancy. 
+Function shadowing allows a derived class to provide a specific implementation for a method already defined in the base class. "Truck" class defines its own "write" and "read" methods, shadowing the "MotorVehicle"s "write" and "read". This ensures "Truck" can extend or modify the base functionality. Accessing shadowed functions ensures a derived class can still utilize the base class's implementation of a shadowed method. In "Truck::write" the "MotorVehicle:::write" method is called to output the base class information before adding truck specific details.
+code example-
+std::ostream& Truck::write(std::ostream& os) const {
+    MotorVehicle::write(os); // Call base class method
+    os << " | " << currentCargo << "/" << capacity;
+    return os;
+}
+
+ This maintains consistency and avoids code duplication. The custom input/output operators enhance usability by allowing objects to be used with standard I/O streams. Overloaded "<<" and ">>" operators for both MotorVehicle and Truck class invoke the respective write and read method, streamlining the input and output process. code- 
+std::ostream& operator<<(std::ostream& os, const Truck& truck) {
+    return truck.write(os);
+}
+
+std::istream& operator>>(std::istream& in, Truck& truck) {
+    return truck.read(in);
+}
+This workshop has provided me with a deep understanding of several key object-oriented programming concepts such as- Inheritance: Allows creating a logical hierarchy of classes, promoting code reuse and reducing redundancy.
+Function Shadowing: Enables derived classes to override base class methods to provide specific functionality.
+Accessing Shadowed Functions: Allows extending base class functionality rather than completely replacing it.
+Custom Input/Output Operators: Integrates classes with C++ I/O streams for intuitive and efficient data handling.
+By designing and implementing the MotorVehicle and Truck classes, and applying these concepts, I have solidified my understanding and practical skills in object-oriented programming. This workshop was very short and convenient to develop as well- as the instructions were more than elaborate to produce the satisfactory output. I did not face any issues while working on it. 
+
