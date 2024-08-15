@@ -1,0 +1,5 @@
+﻿  main.c
+  stringhelp.c
+A:\Academic activity\Summer 2024\SFT221\week6\logFixSFT\stringhelp.c(165,5): warning C4047: '!=': 'int' differs in levels of indirection from 'void *'
+  Generating Code...
+  logFixSFT.vcxproj -> A:\Academic activity\Summer 2024\SFT221\week6\logFixSFT\x64\Debug\logFixSFT.exe

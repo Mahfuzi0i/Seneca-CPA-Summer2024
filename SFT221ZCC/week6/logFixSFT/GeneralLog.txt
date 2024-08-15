@@ -1,0 +1,496 @@
+[INFO Thu Jun 13 21:58:37 2024]: Entered the main function.
+[INFO Thu Jun 13 21:58:37 2024]: The Input test String-- 
+This is a
+string with embedded newlinecharacter and 
+12345 numbers inside it as well 67890
+
+[INFO Thu Jun 13 21:58:37 2024]: Entered indexString function with input: 
+This is a
+string with embedded newlinecharacter and 
+12345 numbers inside it as well 67890
+
+[INFO Thu Jun 13 21:58:37 2024]: Number of Lines found: 3
+[INFO Thu Jun 13 21:58:37 2024]: Number of words found: 13
+[INFO Thu Jun 13 21:58:37 2024]: Number of numbers found: 2
+[INFO Thu Jun 13 21:58:37 2024]: Called printUntil function
+[INFO Thu Jun 13 21:58:37 2024]: Called printUntil function
+[INFO Thu Jun 13 21:58:37 2024]: Called printUntil function
+[INFO Thu Jun 13 21:58:37 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 21:58:37 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 21:58:37 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 21:58:37 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 21:58:37 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 21:58:37 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 21:58:37 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 21:58:37 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 21:58:37 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 21:58:37 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 21:58:37 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 21:58:37 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 21:58:37 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 21:58:37 2024]: 
+WORDS by index
+
+[INFO Thu Jun 13 21:58:37 2024]: Called getWord function for wordnum - 0
+[INFO Thu Jun 13 21:58:37 2024]: Printing word 0 - This
+[INFO Thu Jun 13 21:58:37 2024]: Called getWord function for wordnum - 1
+[INFO Thu Jun 13 21:58:37 2024]: Printing word 1 - is
+[INFO Thu Jun 13 21:58:37 2024]: Called getWord function for wordnum - 2
+[INFO Thu Jun 13 21:58:37 2024]: Printing word 2 - a
+[INFO Thu Jun 13 21:58:37 2024]: Called getWord function for wordnum - 3
+[INFO Thu Jun 13 21:58:37 2024]: Printing word 3 - string
+[INFO Thu Jun 13 21:58:37 2024]: Called getWord function for wordnum - 4
+[INFO Thu Jun 13 21:58:37 2024]: Printing word 4 - with
+[INFO Thu Jun 13 21:58:37 2024]: Called getWord function for wordnum - 5
+[INFO Thu Jun 13 21:58:37 2024]: Printing word 5 - embedded
+[INFO Thu Jun 13 21:58:37 2024]: Called getWord function for wordnum - 6
+[INFO Thu Jun 13 21:58:37 2024]: Printing word 6 - newlinecharacter
+[INFO Thu Jun 13 21:58:37 2024]: Called getWord function for wordnum - 7
+[INFO Thu Jun 13 21:58:37 2024]: Printing word 7 - and
+[INFO Thu Jun 13 21:58:37 2024]: Called getWord function for wordnum - 8
+[INFO Thu Jun 13 21:58:37 2024]: Printing word 8 - numbers
+[INFO Thu Jun 13 21:58:37 2024]: Called getWord function for wordnum - 9
+[INFO Thu Jun 13 21:58:37 2024]: Printing word 9 - inside
+[INFO Thu Jun 13 21:58:37 2024]: Called getWord function for wordnum - 10
+[INFO Thu Jun 13 21:58:37 2024]: Printing word 10 - it
+[INFO Thu Jun 13 21:58:37 2024]: Called getWord function for wordnum - 11
+[INFO Thu Jun 13 21:58:37 2024]: Printing word 11 - as
+[INFO Thu Jun 13 21:58:37 2024]: Called getWord function for wordnum - 12
+[INFO Thu Jun 13 21:58:37 2024]: Printing word 12 - well
+[INFO Thu Jun 13 21:58:37 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 21:58:37 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 21:58:37 2024]: 
+NUMBERS by index
+
+[INFO Thu Jun 13 21:58:37 2024]: Called getNumber function for numbers - 0
+[INFO Thu Jun 13 21:58:37 2024]: Printing number 0 - 12345
+[INFO Thu Jun 13 21:58:37 2024]: Called getNumber function for numbers - 1
+[INFO Thu Jun 13 21:58:37 2024]: Printing number 1 - 67890
+[INFO Thu Jun 13 21:58:37 2024]: Exited the Main function
+
+
+[INFO Thu Jun 13 22:00:59 2024]: Entered the main function.
+[INFO Thu Jun 13 22:00:59 2024]: The Input test String-- 
+This is a new 54
+Test 788 to confirm     that 8889 
+it can handle 999000
+what      is thrown    at it 9900
+
+
+[INFO Thu Jun 13 22:00:59 2024]: Entered indexString function with input: 
+This is a new 54
+Test 788 to confirm     that 8889 
+it can handle 999000
+what      is thrown    at it 9900
+
+
+[INFO Thu Jun 13 22:00:59 2024]: Number of Lines found: 5
+[INFO Thu Jun 13 22:00:59 2024]: Number of words found: 16
+[INFO Thu Jun 13 22:00:59 2024]: Number of numbers found: 5
+[INFO Thu Jun 13 22:00:59 2024]: Called printUntil function
+[INFO Thu Jun 13 22:00:59 2024]: Called printUntil function
+[INFO Thu Jun 13 22:00:59 2024]: Called printUntil function
+[INFO Thu Jun 13 22:00:59 2024]: Called printUntil function
+[INFO Thu Jun 13 22:00:59 2024]: Called printUntil function
+[INFO Thu Jun 13 22:00:59 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 22:00:59 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 22:00:59 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 22:00:59 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 22:00:59 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 22:00:59 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 22:00:59 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 22:00:59 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 22:00:59 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 22:00:59 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 22:00:59 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 22:00:59 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 22:00:59 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 22:00:59 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 22:00:59 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 22:00:59 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 22:00:59 2024]: 
+WORDS by index
+
+[INFO Thu Jun 13 22:00:59 2024]: Called getWord function for wordnum - 0
+[INFO Thu Jun 13 22:00:59 2024]: Printing word 0 - This
+[INFO Thu Jun 13 22:00:59 2024]: Called getWord function for wordnum - 1
+[INFO Thu Jun 13 22:00:59 2024]: Printing word 1 - is
+[INFO Thu Jun 13 22:00:59 2024]: Called getWord function for wordnum - 2
+[INFO Thu Jun 13 22:00:59 2024]: Printing word 2 - a
+[INFO Thu Jun 13 22:00:59 2024]: Called getWord function for wordnum - 3
+[INFO Thu Jun 13 22:00:59 2024]: Printing word 3 - new
+[INFO Thu Jun 13 22:00:59 2024]: Called getWord function for wordnum - 4
+[INFO Thu Jun 13 22:00:59 2024]: Printing word 4 - Test
+[INFO Thu Jun 13 22:00:59 2024]: Called getWord function for wordnum - 5
+[INFO Thu Jun 13 22:00:59 2024]: Printing word 5 - to
+[INFO Thu Jun 13 22:00:59 2024]: Called getWord function for wordnum - 6
+[INFO Thu Jun 13 22:00:59 2024]: Printing word 6 - confirm
+[INFO Thu Jun 13 22:00:59 2024]: Called getWord function for wordnum - 7
+[INFO Thu Jun 13 22:00:59 2024]: Printing word 7 - that
+[INFO Thu Jun 13 22:00:59 2024]: Called getWord function for wordnum - 8
+[INFO Thu Jun 13 22:00:59 2024]: Printing word 8 - it
+[INFO Thu Jun 13 22:00:59 2024]: Called getWord function for wordnum - 9
+[INFO Thu Jun 13 22:00:59 2024]: Printing word 9 - can
+[INFO Thu Jun 13 22:00:59 2024]: Called getWord function for wordnum - 10
+[INFO Thu Jun 13 22:00:59 2024]: Printing word 10 - handle
+[INFO Thu Jun 13 22:00:59 2024]: Called getWord function for wordnum - 11
+[INFO Thu Jun 13 22:00:59 2024]: Printing word 11 - what
+[INFO Thu Jun 13 22:00:59 2024]: Called getWord function for wordnum - 12
+[INFO Thu Jun 13 22:00:59 2024]: Printing word 12 - is
+[INFO Thu Jun 13 22:00:59 2024]: Called getWord function for wordnum - 13
+[INFO Thu Jun 13 22:00:59 2024]: Printing word 13 - thrown
+[INFO Thu Jun 13 22:00:59 2024]: Called getWord function for wordnum - 14
+[INFO Thu Jun 13 22:00:59 2024]: Printing word 14 - at
+[INFO Thu Jun 13 22:00:59 2024]: Called getWord function for wordnum - 15
+[INFO Thu Jun 13 22:00:59 2024]: Printing word 15 - it
+[INFO Thu Jun 13 22:00:59 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 22:00:59 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 22:00:59 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 22:00:59 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 22:00:59 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 22:00:59 2024]: 
+NUMBERS by index
+
+[INFO Thu Jun 13 22:00:59 2024]: Called getNumber function for numbers - 0
+[INFO Thu Jun 13 22:00:59 2024]: Printing number 0 - 54
+[INFO Thu Jun 13 22:00:59 2024]: Called getNumber function for numbers - 1
+[INFO Thu Jun 13 22:00:59 2024]: Printing number 1 - 788
+[INFO Thu Jun 13 22:00:59 2024]: Called getNumber function for numbers - 2
+[INFO Thu Jun 13 22:00:59 2024]: Printing number 2 - 8889
+[INFO Thu Jun 13 22:00:59 2024]: Called getNumber function for numbers - 3
+[INFO Thu Jun 13 22:00:59 2024]: Printing number 3 - 999000
+[INFO Thu Jun 13 22:00:59 2024]: Called getNumber function for numbers - 4
+[INFO Thu Jun 13 22:00:59 2024]: Printing number 4 - 9900
+[INFO Thu Jun 13 22:00:59 2024]: Exited the Main function
+
+
+[INFO Thu Jun 13 22:03:07 2024]: Entered the main function.
+[INFO Thu Jun 13 22:03:07 2024]: The Input test String-- 
+999988 
+999934 9934201 4802802 
+9282284
+
+[INFO Thu Jun 13 22:03:07 2024]: Entered indexString function with input: 
+999988 
+999934 9934201 4802802 
+9282284
+
+[INFO Thu Jun 13 22:03:07 2024]: Number of Lines found: 3
+[INFO Thu Jun 13 22:03:07 2024]: Number of words found: 0
+[INFO Thu Jun 13 22:03:07 2024]: Number of numbers found: 5
+[INFO Thu Jun 13 22:03:07 2024]: Called printUntil function
+[INFO Thu Jun 13 22:03:07 2024]: Called printUntil function
+[INFO Thu Jun 13 22:03:07 2024]: Called printUntil function
+[INFO Thu Jun 13 22:03:07 2024]: 
+WORDS by index
+
+[INFO Thu Jun 13 22:03:07 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 22:03:07 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 22:03:07 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 22:03:07 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 22:03:07 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 22:03:07 2024]: 
+NUMBERS by index
+
+[INFO Thu Jun 13 22:05:57 2024]: Entered the main function.
+[INFO Thu Jun 13 22:05:57 2024]: The Input test String-- 
+999988 
+999934 9934201 4802802 
+9282284
+
+[INFO Thu Jun 13 22:05:57 2024]: Entered indexString function with input: 
+999988 
+999934 9934201 4802802 
+9282284
+
+[INFO Thu Jun 13 22:05:57 2024]: Number of Lines found: 3
+[INFO Thu Jun 13 22:05:57 2024]: Number of words found: 0
+[INFO Thu Jun 13 22:05:57 2024]: Number of numbers found: 5
+[INFO Thu Jun 13 22:05:57 2024]: Called printUntil function
+[INFO Thu Jun 13 22:05:57 2024]: Called printUntil function
+[INFO Thu Jun 13 22:05:57 2024]: Called printUntil function
+[INFO Thu Jun 13 22:05:57 2024]: 
+WORDS by index
+
+[INFO Thu Jun 13 22:05:57 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 22:05:57 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 22:05:57 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 22:05:57 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 22:05:57 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 22:05:57 2024]: 
+NUMBERS by index
+
+[INFO Thu Jun 13 22:05:57 2024]: Called getNumber function for numbers - 0
+[INFO Thu Jun 13 22:05:57 2024]: Printing number 0 - 999988
+[INFO Thu Jun 13 22:05:57 2024]: Called getNumber function for numbers - 1
+[INFO Thu Jun 13 22:05:57 2024]: Printing number 1 - 999934
+[INFO Thu Jun 13 22:05:57 2024]: Called getNumber function for numbers - 2
+[INFO Thu Jun 13 22:05:57 2024]: Printing number 2 - 9934201
+[INFO Thu Jun 13 22:05:57 2024]: Called getNumber function for numbers - 3
+[INFO Thu Jun 13 22:05:57 2024]: Printing number 3 - 4802802
+[INFO Thu Jun 13 22:05:57 2024]: Called getNumber function for numbers - 4
+[INFO Thu Jun 13 22:05:57 2024]: Printing number 4 - 9282284
+[INFO Thu Jun 13 22:05:57 2024]: Exited the Main function
+
+
+[INFO Thu Jun 13 22:06:59 2024]: Entered the main function.
+[INFO Thu Jun 13 22:06:59 2024]: The Input test String-- 
+999988 
+999934 9934201 4802802 
+9282284
+
+[INFO Thu Jun 13 22:06:59 2024]: Entered indexString function with input: 
+999988 
+999934 9934201 4802802 
+9282284
+
+[INFO Thu Jun 13 22:06:59 2024]: Number of Lines found: 3
+[INFO Thu Jun 13 22:06:59 2024]: Number of words found: 0
+[INFO Thu Jun 13 22:06:59 2024]: Number of numbers found: 5
+[INFO Thu Jun 13 22:06:59 2024]: Called printUntil function
+[INFO Thu Jun 13 22:06:59 2024]: Called printUntil function
+[INFO Thu Jun 13 22:06:59 2024]: Called printUntil function
+[INFO Thu Jun 13 22:06:59 2024]: 
+WORDS by index
+
+[INFO Thu Jun 13 22:06:59 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 22:06:59 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 22:06:59 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 22:06:59 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 22:06:59 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 22:06:59 2024]: 
+NUMBERS by index
+
+[INFO Thu Jun 13 22:06:59 2024]: Called getNumber function for numbers - 0
+[INFO Thu Jun 13 22:06:59 2024]: Printing number 0 - 999988
+[INFO Thu Jun 13 22:06:59 2024]: Called getNumber function for numbers - 1
+[INFO Thu Jun 13 22:06:59 2024]: Printing number 1 - 999934
+[INFO Thu Jun 13 22:06:59 2024]: Called getNumber function for numbers - 2
+[INFO Thu Jun 13 22:06:59 2024]: Printing number 2 - 9934201
+[INFO Thu Jun 13 22:06:59 2024]: Called getNumber function for numbers - 3
+[INFO Thu Jun 13 22:06:59 2024]: Printing number 3 - 4802802
+[INFO Thu Jun 13 22:06:59 2024]: Called getNumber function for numbers - 4
+[INFO Thu Jun 13 22:06:59 2024]: Printing number 4 - 9282284
+[INFO Thu Jun 13 22:06:59 2024]: Exited the Main function
+
+
+[INFO Thu Jun 13 22:12:09 2024]: Entered the main function.
+[INFO Thu Jun 13 22:12:09 2024]: The Input test String-- 
+this is a string 
+with no numbers at all.
+lets see what the code does!
+
+[INFO Thu Jun 13 22:12:09 2024]: Entered indexString function with input: 
+this is a string 
+with no numbers at all.
+lets see what the code does!
+
+[INFO Thu Jun 13 22:12:09 2024]: Number of Lines found: 3
+[INFO Thu Jun 13 22:12:09 2024]: Number of words found: 15
+[INFO Thu Jun 13 22:12:09 2024]: Number of numbers found: 0
+[INFO Thu Jun 13 22:12:09 2024]: Called printUntil function
+[INFO Thu Jun 13 22:12:09 2024]: Called printUntil function
+[INFO Thu Jun 13 22:12:09 2024]: Called printUntil function
+[INFO Thu Jun 13 22:12:09 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 22:12:09 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 22:12:09 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 22:12:09 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 22:12:09 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 22:12:09 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 22:12:09 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 22:12:09 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 22:12:09 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 22:12:09 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 22:12:09 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 22:12:09 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 22:12:09 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 22:12:09 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 22:12:09 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 22:12:09 2024]: 
+WORDS by index
+
+[INFO Thu Jun 13 22:12:09 2024]: Called getWord function for wordnum - 0
+[INFO Thu Jun 13 22:12:09 2024]: Printing word 0 - this
+[INFO Thu Jun 13 22:12:09 2024]: Called getWord function for wordnum - 1
+[INFO Thu Jun 13 22:12:09 2024]: Printing word 1 - is
+[INFO Thu Jun 13 22:12:09 2024]: Called getWord function for wordnum - 2
+[INFO Thu Jun 13 22:12:09 2024]: Printing word 2 - a
+[INFO Thu Jun 13 22:12:09 2024]: Called getWord function for wordnum - 3
+[INFO Thu Jun 13 22:12:09 2024]: Printing word 3 - string
+[INFO Thu Jun 13 22:12:09 2024]: Called getWord function for wordnum - 4
+[INFO Thu Jun 13 22:12:09 2024]: Printing word 4 - with
+[INFO Thu Jun 13 22:12:09 2024]: Called getWord function for wordnum - 5
+[INFO Thu Jun 13 22:12:09 2024]: Printing word 5 - no
+[INFO Thu Jun 13 22:12:09 2024]: Called getWord function for wordnum - 6
+[INFO Thu Jun 13 22:12:09 2024]: Printing word 6 - numbers
+[INFO Thu Jun 13 22:12:09 2024]: Called getWord function for wordnum - 7
+[INFO Thu Jun 13 22:12:09 2024]: Printing word 7 - at
+[INFO Thu Jun 13 22:12:09 2024]: Called getWord function for wordnum - 8
+[INFO Thu Jun 13 22:12:09 2024]: Printing word 8 - all.
+[INFO Thu Jun 13 22:12:09 2024]: Called getWord function for wordnum - 9
+[INFO Thu Jun 13 22:12:09 2024]: Printing word 9 - lets
+[INFO Thu Jun 13 22:12:09 2024]: Called getWord function for wordnum - 10
+[INFO Thu Jun 13 22:12:09 2024]: Printing word 10 - see
+[INFO Thu Jun 13 22:12:09 2024]: Called getWord function for wordnum - 11
+[INFO Thu Jun 13 22:12:09 2024]: Printing word 11 - what
+[INFO Thu Jun 13 22:12:09 2024]: Called getWord function for wordnum - 12
+[INFO Thu Jun 13 22:12:09 2024]: Printing word 12 - the
+[INFO Thu Jun 13 22:12:09 2024]: Called getWord function for wordnum - 13
+[INFO Thu Jun 13 22:12:09 2024]: Printing word 13 - code
+[INFO Thu Jun 13 22:12:09 2024]: Called getWord function for wordnum - 14
+[INFO Thu Jun 13 22:12:09 2024]: Printing word 14 - does!
+[INFO Thu Jun 13 22:12:09 2024]: 
+NUMBERS by index
+
+[INFO Thu Jun 13 22:12:09 2024]: Exited the Main function
+
+
+[INFO Thu Jun 13 23:31:20 2024]: Entered the main function.
+[INFO Thu Jun 13 23:31:20 2024]: The Input test String-- 
+This *** is the ^&^ final 
+test 8777 with    multiple spaces 88899 and numbers  33332 &&&& it shall    be executed!
+
+[INFO Thu Jun 13 23:31:20 2024]: Entered indexString function with input: 
+This *** is the ^&^ final 
+test 8777 with    multiple spaces 88899 and numbers  33332 &&&& it shall    be executed!
+
+
+[INFO Thu Jun 13 23:31:53 2024]: Number of Lines found: 2
+[INFO Thu Jun 13 23:31:53 2024]: Number of words found: 17
+[INFO Thu Jun 13 23:31:53 2024]: Number of numbers found: 3
+[INFO Thu Jun 13 23:31:53 2024]: Called printUntil function
+[INFO Thu Jun 13 23:31:53 2024]: Called printUntil function
+[INFO Thu Jun 13 23:31:53 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 23:31:53 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 23:31:53 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 23:31:53 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 23:31:53 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 23:31:53 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 23:31:53 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 23:31:53 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 23:31:53 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 23:31:53 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 23:31:53 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 23:31:53 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 23:31:53 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 23:31:53 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 23:31:53 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 23:31:53 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 23:31:53 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 23:31:53 2024]: 
+WORDS by index
+
+[INFO Thu Jun 13 23:31:53 2024]: Called getWord function for wordnum - 0
+[INFO Thu Jun 13 23:31:53 2024]: Printing word 0 - This
+[INFO Thu Jun 13 23:31:53 2024]: Called getWord function for wordnum - 1
+[INFO Thu Jun 13 23:31:53 2024]: Printing word 1 - ***
+[INFO Thu Jun 13 23:31:53 2024]: Called getWord function for wordnum - 2
+[INFO Thu Jun 13 23:31:53 2024]: Printing word 2 - is
+[INFO Thu Jun 13 23:31:53 2024]: Called getWord function for wordnum - 3
+[INFO Thu Jun 13 23:31:53 2024]: Printing word 3 - the
+[INFO Thu Jun 13 23:31:53 2024]: Called getWord function for wordnum - 4
+[INFO Thu Jun 13 23:31:53 2024]: Printing word 4 - ^&^
+[INFO Thu Jun 13 23:31:53 2024]: Called getWord function for wordnum - 5
+[INFO Thu Jun 13 23:31:53 2024]: Printing word 5 - final
+[INFO Thu Jun 13 23:31:53 2024]: Called getWord function for wordnum - 6
+[INFO Thu Jun 13 23:31:53 2024]: Printing word 6 - test
+[INFO Thu Jun 13 23:31:53 2024]: Called getWord function for wordnum - 7
+[INFO Thu Jun 13 23:31:53 2024]: Printing word 7 - with
+[INFO Thu Jun 13 23:31:53 2024]: Called getWord function for wordnum - 8
+[INFO Thu Jun 13 23:31:53 2024]: Printing word 8 - multiple
+[INFO Thu Jun 13 23:31:53 2024]: Called getWord function for wordnum - 9
+[INFO Thu Jun 13 23:31:53 2024]: Printing word 9 - spaces
+[INFO Thu Jun 13 23:31:53 2024]: Called getWord function for wordnum - 10
+[INFO Thu Jun 13 23:31:53 2024]: Printing word 10 - and
+[INFO Thu Jun 13 23:31:53 2024]: Called getWord function for wordnum - 11
+[INFO Thu Jun 13 23:31:53 2024]: Printing word 11 - numbers
+[INFO Thu Jun 13 23:31:53 2024]: Called getWord function for wordnum - 12
+[INFO Thu Jun 13 23:31:53 2024]: Printing word 12 - &&&&
+[INFO Thu Jun 13 23:31:53 2024]: Called getWord function for wordnum - 13
+[INFO Thu Jun 13 23:31:53 2024]: Printing word 13 - it
+[INFO Thu Jun 13 23:31:53 2024]: Called getWord function for wordnum - 14
+[INFO Thu Jun 13 23:31:53 2024]: Printing word 14 - shall
+[INFO Thu Jun 13 23:31:53 2024]: Called getWord function for wordnum - 15
+[INFO Thu Jun 13 23:31:53 2024]: Printing word 15 - be
+[INFO Thu Jun 13 23:31:53 2024]: Called getWord function for wordnum - 16
+[INFO Thu Jun 13 23:31:53 2024]: Printing word 16 - executed!
+[INFO Thu Jun 13 23:31:53 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 23:31:53 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 23:31:53 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 23:31:53 2024]: 
+NUMBERS by index
+
+[INFO Thu Jun 13 23:31:53 2024]: Called getNumber function for numbers - 0
+[INFO Thu Jun 13 23:31:53 2024]: Printing number 0 - 8777
+[INFO Thu Jun 13 23:31:53 2024]: Called getNumber function for numbers - 1
+[INFO Thu Jun 13 23:31:53 2024]: Printing number 1 - 88899
+[INFO Thu Jun 13 23:31:53 2024]: Called getNumber function for numbers - 2
+[INFO Thu Jun 13 23:31:53 2024]: Printing number 2 - 33332
+[INFO Thu Jun 13 23:31:53 2024]: Exited the Main function
+
+
+[INFO Thu Jun 13 23:34:39 2024]: Entered the main function.
+[INFO Thu Jun 13 23:34:39 2024]: The Input test String-- 
+the 
+last 66655 normal case for 
+ 888 the code *** 12345 
+and 
+
+[INFO Thu Jun 13 23:34:39 2024]: Entered indexString function with input: 
+the 
+last 66655 normal case for 
+ 888 the code *** 12345 
+and 
+
+[INFO Thu Jun 13 23:34:39 2024]: Number of Lines found: 4
+[INFO Thu Jun 13 23:34:39 2024]: Number of words found: 9
+[INFO Thu Jun 13 23:34:39 2024]: Number of numbers found: 3
+[INFO Thu Jun 13 23:34:39 2024]: Called printUntil function
+[INFO Thu Jun 13 23:34:39 2024]: Called printUntil function
+[INFO Thu Jun 13 23:34:39 2024]: Called printUntil function
+[INFO Thu Jun 13 23:34:39 2024]: Called printUntil function
+[INFO Thu Jun 13 23:34:39 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 23:34:39 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 23:34:39 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 23:34:39 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 23:34:39 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 23:34:39 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 23:34:39 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 23:34:39 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 23:34:39 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 23:34:39 2024]: 
+WORDS by index
+
+[INFO Thu Jun 13 23:34:39 2024]: Called getWord function for wordnum - 0
+[INFO Thu Jun 13 23:34:39 2024]: Printing word 0 - the
+[INFO Thu Jun 13 23:34:39 2024]: Called getWord function for wordnum - 1
+[INFO Thu Jun 13 23:34:39 2024]: Printing word 1 - last
+[INFO Thu Jun 13 23:34:39 2024]: Called getWord function for wordnum - 2
+[INFO Thu Jun 13 23:34:39 2024]: Printing word 2 - normal
+[INFO Thu Jun 13 23:34:39 2024]: Called getWord function for wordnum - 3
+[INFO Thu Jun 13 23:34:39 2024]: Printing word 3 - case
+[INFO Thu Jun 13 23:34:39 2024]: Called getWord function for wordnum - 4
+[INFO Thu Jun 13 23:34:39 2024]: Printing word 4 - for
+[INFO Thu Jun 13 23:34:39 2024]: Called getWord function for wordnum - 5
+[INFO Thu Jun 13 23:34:39 2024]: Printing word 5 - the
+[INFO Thu Jun 13 23:34:39 2024]: Called getWord function for wordnum - 6
+[INFO Thu Jun 13 23:34:39 2024]: Printing word 6 - code
+[INFO Thu Jun 13 23:34:39 2024]: Called getWord function for wordnum - 7
+[INFO Thu Jun 13 23:34:39 2024]: Printing word 7 - ***
+[INFO Thu Jun 13 23:34:39 2024]: Called getWord function for wordnum - 8
+[INFO Thu Jun 13 23:34:39 2024]: Printing word 8 - and
+[INFO Thu Jun 13 23:34:39 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 23:34:39 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 23:34:39 2024]: Called printfUntilSpace function
+[INFO Thu Jun 13 23:34:39 2024]: 
+NUMBERS by index
+
+[INFO Thu Jun 13 23:34:39 2024]: Called getNumber function for numbers - 0
+[INFO Thu Jun 13 23:34:39 2024]: Printing number 0 - 66655
+[INFO Thu Jun 13 23:34:39 2024]: Called getNumber function for numbers - 1
+[INFO Thu Jun 13 23:34:39 2024]: Printing number 1 - 888
+[INFO Thu Jun 13 23:34:39 2024]: Called getNumber function for numbers - 2
+[INFO Thu Jun 13 23:34:39 2024]: Printing number 2 - 12345
+[INFO Thu Jun 13 23:34:39 2024]: Exited the Main function
+
+
