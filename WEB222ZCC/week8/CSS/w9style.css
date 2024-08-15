@@ -1,0 +1,29 @@
+/*
+    This is a comment
+*/
+body {
+    font-size: 20pt;
+    
+}
+#id2 {
+    color: magenta;
+    text-transform: uppercase;
+    font-size: 3em; /* 3*12 */
+}
+
+#id3 {
+    color: white;
+    text-align: center;
+}
+
+/*
+parent child relation
+div is the parent and p is the child. this is how you isolate things from the rest
+*/
+div p {
+    color: red
+}
+
+/*
+Grouping selectors- we use commas
+*/
