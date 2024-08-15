@@ -1,0 +1,23 @@
+#!/bin/sh
+
+echo "Starting test runner..."
+
+parent_path=$( cd "$(dirname "${BASH_SOURCE[0]}")/../.." ; pwd -P )
+
+# Define the path to the test DLL
+test_runner="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\TestWindow\vstest.console.exe"
+cd "$parent_path"
+tests_dll="$parent_path/SourceCode/MS4/x64/Debug/UnitTest1.dll"
+failure_string="Failed:"
+
+# Run the tests
+testout=`"$test_runner" "$tests_dll"`
+
+# Check for test failures
+if [[ $testout == *"$failure_string"* ]]; then
+    echo >&2 "Unit tests are not passing! Push aborted!"
+    exit 1
+fi
+
+echo >&2 "All tests run successfully."
+exit 0

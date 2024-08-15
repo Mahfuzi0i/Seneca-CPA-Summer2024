@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/week12-ex1.js">
+
+    </script>
+    <title>A Form-week12</title>
+</head>
+<body>
+    <h1>WEEK 12- Form validation</h1>
+    <form 
+        name = "form1"
+        action="https://httpbin.org/post" 
+        method="post" 
+        onsubmit="return validate()">
+        <div>
+            <label for="fname">First Name</label>
+            <input id="fname" type="text" name="fname" required="required">
+            <span id="fname-error" style="color: red;"></span>
+
+        </div>
+
+        <div>
+            <label for="age">Age</label>
+            <input type="text" id="age" name="age" required>
+            <span id="age-error" style="color: red;"></span>
+        </div>
+        
+        <div>
+            <input type="checkbox" id="agree" name ="agree"> AGREE
+        </div>
+
+        <div>
+            <input type="submit">
+        </div>
+
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/examprep.js"></script>
+    <title>My Exam Preparation of forms</title>
+</head>
+<body>
+    <header>
+        <h1>My Exam Preparation</h1>
+    </header>
+    <main>
+        <h2>This part of the exam focuses on Forms</h2>
+        <hr>
+        <form id="prep" name="prep" action="https://httpbin.org/post" method="post" onsubmit="return validateForm()">
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <div>
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="fname" placeholder="Please Enter your first name" required>
+                    <span id="fname-error" style="color:red"></span>
+                </div>
+                
+                <div>
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lname" placeholder="Enter your Last name" required>
+                    <span id="lname-error" style="color:red"></span>
+                </div>  
+
+                <div>
+                    <label for="age">Age</label>
+                    <input type="text" id="age" name="age" placeholder="You age" required>
+                </div>
+
+                <div>
+                    <label for="Email">Email</label>
+                    <input type="text" id="email" name="email" placeholder="example@gmail.com" required>
+                    <span id="email-error" style="color:red"></span>
+                </div>
+            </fieldset>
+
+            <div>
+                <label for="prefer">Tell us which OS you prefer</label>
+                <input type="radio" name="OS" value="Windows">Windows
+                <input type="radio" name="OS" value="Linux">Linux
+                <input type="radio" name="OS" value="Mac"> Mac
+                <input type="radio" name="OS" value="Android" required>Android
+            </div>
+
+            <div>
+                <label for="course">Which course do you have?</label>
+                <input type="text" id="course" name="course" list="courses" required>
+                <datalist id="courses"> 
+                    <option value="IPC144"></option>
+                    <option value="APS145"></option>
+                    <option value="WEB222"></option>
+                    <option value="DBS211"></option>
+                </datalist>   
+            </div>
+
+            <div>
+                <input type="checkbox" id="agree" name="agree"> Agree
+                <span id="agree-error" name="agree-error" style="color:red"></span>
+            </div>
+
+            <div>
+                <input type="submit">
+            </div>
+        </form>
+
+    </main>
+</body>
+</html>

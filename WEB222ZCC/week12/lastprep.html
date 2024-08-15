@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Another trial</title>
+</head>
+<body>
+    <header>
+        <h1>This is another trial for the Last Quiz Preparation</h1>
+    </header>
+    <main>
+        <h2>This will have in html imbedded js code</h2>
+        <form action="https://httpbin.org/post" id="form1" name="form1" method="post" onsubmit="return validate()">
+            <fieldset>
+                <legend>Your personal Information</legend>
+                <div>
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="fname" placeholder="First Name" required>
+                    <span id="fname-error" style="color:red"></span>
+                </div>
+
+                <div>
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lname" placeholder="Last Name" required>
+                    <span id="lname-error" style="color:red"></span>
+                </div>
+
+                <div>
+                    <label for="age"> Age</label>
+                    <input type="number" id="age" name="age" placeholder="Your Age here" required>
+                    <span id="age-error" name="age-error" style="color:red"></span>
+                </div>
+
+                <div>
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" placeholder="example@gmail.com" required>
+                    <span id="email-error" name="email-error" style="color:red"></span>
+                </div>                
+            </fieldset>
+
+            <div>
+                <label for="sports">What kind of sports do you prefer?</label>
+                <input type="checkbox" id="sports" name="sports"> Football
+                <input type="checkbox" id="sports" name="sports"> Cricket
+                <input type="checkbox" id="sports" name="sports"> Rugby
+            </div>
+
+            <div>
+                <label for="OS">What kind of OS do yo prefer?</label>
+                <input type="radio" id="OS" name="OS" required>Windows
+                <input type="radio" id="OS" name="OS">Linux
+                <input type="radio" id="OS" name="OS">Android
+            </div>
+
+            <div>
+                <label for="course">Which courses do you have?</label>
+                <input type="text" id="course" name="course" list="list">
+                <datalist id="list">
+                     <option value="IPC144"></option>
+                     <option value="OOP244"></option>
+                     <option value="WEB222"></option>
+                </datalist>
+            </div>
+
+            <div>
+                <input type="submit">
+            </div>
+        </form>
+    </main>
+
+    <script>
+        function validate() {
+            let fname=document.getElementById("fname").value.trim();
+            let lname=document.getElementById("lname").value.trim();
+            let age=document.getElementById("age").value.trim();
+            let email=document.getElementById("email").value.trim();
+
+            let namePattern=/^[a-zA-Z ]+$/;
+
+            // validate name
+            if (fname == "") {
+                document.getElementById("fname-error").innerHTML = "First name cannot be empty";
+                return false;
+            }
+            else if(!namePattern.test(fname)) {
+                document.getElementById("fname-error").innerHTML = "First name can only contain letters and spaces";
+                return false;
+            }
+
+            if (lname == "") {
+                document.getElementById("lname-error").innerHTML = "last name cannot be empty";
+                return false;
+            }
+            else if(!namePattern.test(lname)) {
+                document.getElementById("lname-error").innerHTML = "last name can only contain letters and spaces";
+                return false;
+            }
+
+            // Age validation
+            if (age == "") {
+                document.getElementById("age-error").innerHTML = "Age cannot be empty";
+                return false;
+            }
+            else if(!isdigit(age)) {
+                document.getElementById("age-error").innerHTML = "Age can only contain numbers";
+                return false;
+            }
+            return true;
+        }
+    </script>
+</body>
+</html>

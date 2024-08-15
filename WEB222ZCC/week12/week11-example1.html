@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 11</title>
+</head>
+<body>
+    <h1>WEEK 11- Introduction to Forms</h1>
+
+    <!--Using get, it will append to the link url-->
+    <form action="https://httpbin.org/get" method="get">
+        <fieldset>
+            <legend>Personal Information</legend>
+            First Name: <input type="text" id="fname" name="fname" placeholder="Enter your first name"><br>
+        
+        <div>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname" size="15"
+            placeholder="Last Name">
+        </div>
+        </fieldset>
+
+        <div>
+            <label for="pass">Password:</label>
+            <input type="password" id="pass" name="pass">
+        </div>
+
+        <div>
+            Upload Assignment:
+            <input type="file" id="file" >
+        </div>
+        
+        <div>
+            What are your hobbies and interests?
+            <input type="checkbox" id="interest" name="interest"
+            value="sports">Sports
+            <input type="checkbox" id="interest" name="interest"
+            value="music">Music
+        </div>
+
+        <div>
+            which OS do you prefer?
+            <input type="radio" name="OS" value="windows"> Windows
+            <input type="radio" name="OS" value="Linux"> Linux
+        </div>
+
+        <div>
+            What is your current course?
+            <input type="text" name="course" list="list">
+            <datalist id="list">  
+                <option value="Web222">Web222</option>
+                <option value="IPC144">IPC144</option>
+            </datalist>
+        </div>
+
+        <div>
+            what do you want to do in this weekend?
+            <select name="weekend" id="weekend" size="2">
+                <option value="cofee">Drink coffee</option>
+                <option value="book">Read a book</option>
+                <option value="">Take a walk</option>
+            </select>
+        </div>
+
+        <div>
+            How is the WEB development going so far? <br>
+            <textarea name="web" id="web" rows="10" cols="30"> 
+
+            </textarea>
+        </div>
+
+        <div>
+            <label for="media">Media:</label>
+            <select name="media" id="media" size="3" style="width:20%">
+                <option value="blue-ray">blue-ray</option>
+                <option value="dvd">DVD</option>
+                <option value="digital">Digital</option>
+            </select>
+        </div>
+
+        <div style="text-align: right">
+            <input type="hidden">
+
+            <input type="submit">
+
+            <input type="reset">
+
+            <input type="button" value="calculate">
+        </div>
+        
+    </form>
+</body>
+</html>
