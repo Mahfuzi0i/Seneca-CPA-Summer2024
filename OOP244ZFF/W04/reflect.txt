@@ -1,0 +1,24 @@
+/*                        
+--------------------------------------------------------------------
+Name           : Abdullah Al Mahfuz
+Email          : aamahfuz@myseneca.ca
+Student ID     : 180377236
+Section        : ZFF
+Date           : 06 june 2024 (Thursday)
+
+Authenticity Declaration:
+I have done all the coding by myself and only copied the code that
+my professor provided to complete my workshops and assignments.
+--------------------------------------------------------------------
+*/
+
+This workshop had a lot of elements into it. I learned to define a default constructor,  defining a destructor to avoide memory overloading, using "this" pointer(it was very new for me). 
+In this workshop, the default constructor is called 'setToDefault()' and it is defined as a private member of the 'Canister' class. its implemented to set default dimensions, content volume, and marking the Canister as usable.
+I have used multiple functions to check the Canisters validity to hold new content. Custom constructors allow initializing objects with specific values provided at the time of object creation. This workshop had 2 custom constructor both called Canister with one and three agruments respectively (i.e. Canister::Canister(const char* contentName) & Canister::Canister(double height, double diameter, const char* contentName) ). The 1st constructor takes in the content name from the user and creates a Canister with the default values and the 2nd constructor takes in the dimentions for the canister as well its content name to create a custom Canister in accordance with the acceptable limit. It lets the user create Canisters of their own liking. In this workshop, i also defined a destructor to prevent memory leaks. It is a special member function that is invoked when an object goes out of scope or is explicitely deleted. It ensures that dynamically allocated memory is properly released, preventing memory leaks. In the the workshop, this is how its defined- Canister::~Canister() {
+    delete[] m_contentName;  // Free the dynamically allocated memory for the content name
+}
+This workshop also allowed me to use 'this' keyword to refer to the current object. The this pointer is an implicit pointer available in member functions that points to the object for which the member function is called. It is used to return the reference of the current object in functions like 'setContent', 'pour', and other member functions to allow method chaining. 
+I had some difficulties while doing this workshop. Handling the dynamic memory for the content name as i had one default just for contentname and another one called clear() to set everything back to default as well as deallocate the dynamic memory. Maintaining the Canister usability (m_usable) flag was also a bit difficult as i had to ensure it handled everything correctly throught various operations like setting content and pouring liquid in empty canister as well as canisters with existing contents. Formatting the output wasn't that much difficult as i had used 'iomanip' library and setpreciosion and setw to print the outputs in the a very specific format that was required for this workshop. I also faced some logical errors while trying to pour contents from one canister to another. When they have different contents or exceeding the canister's capacity, those kinds of scenarios required a lot of trial and errors. 
+Overall, the workshop gave me valuable hands-on-experience with OOP concepts, dynamic memory management, constructors and destructors, method chaining using this pointer, and formatting output for user-friendly display. It also highlighted the importance of rigorous testing and debugging to ensure the class functions correctly in all scenarios.
+
+ 
