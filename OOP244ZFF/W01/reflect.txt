@@ -1,0 +1,31 @@
+/*                        
+--------------------------------------------------------------------
+Name           : Abdullah Al Mahfuz
+Email          : aamahfuz@myseneca.ca
+Student ID     : 180377236
+Section        : ZFF
+Date           : 12 May 2024 (Sunday)
+
+Authenticity Declaration:
+I have done all the coding by myself and only copied the code that
+my professor provided to complete my workshops and assignments.
+--------------------------------------------------------------------
+*/
+
+
+
+
+I learned the importance and significance of modular design through completing this workshop. It made me appreciate the simplicity and ingenuity in breaking down big codes into smaller modules that contribute to the maintainability, readability, scalability, and reusability of software systems. This is the first time I have used namespace in programming. I found out that it is extremely crucial to design a module that integrates into the existing source code without causing naming conflicts with variable names. It reduces the need for explicit namespace qualification, making the code more concise. Like when I do, “using namespace std;” that means that I can just use cin or cout on its own instead of explicitly declaring std::cin or std::cout. It’s really convenient not having to repeat std:: every time I need to use input and output functions in C++.
+
+I also learned to distinguish the contents of header and implementation files. The header files will only contain the function declaration whereas the implementation files will include the related header files and will define what these functions will do without the need for declaring them. This reduces the amount of code we need to write in the modules. And I also learned the different uses of namespace in header files and implementation files. It’s crucial that I never use “using” statement in a header file. It aims to prevent potential issues related to namespace pollution. “using” statements in header files can have unintended consequences for other parts of the codebase as well. They affect all files that include the header, potentially altering the behavior of unrelated code and leading to unexpected side effects or compilation errors. 
+
+I also learned to surround my code with a specific namespace (both header and implementation files) and where to use “using namespace” statement. I should use “namespace Seneca { }” in all header and implementation files and all the declarations and function codes should be inside the {} braces to surround the codes in a safe namespace. And lastly the file (.cpp) that holds the main function should use “using namespace” as it is the entry point of my program and needs to be accessible directly without any additional scoping. 
+I also learned about header guards or safeguards for header files. It prevents multiple definitions, maintains build efficiency, ensures consistent definitions, and avoids dependency issues. In this workshop, I used safeguards like this (the example is for the utils header file)-
+
+#ifndef NAMESPACE_UTILS_H
+#define NAMESPACE_UTILS_H
+
+//UTILS HEADER FILE CONTENTS
+#endif
+
+I didn’t face a lot of difficulty as the provided codes were already sorted well. For each separate functions, their definitions and implementations were put in a manner that I could see which go where. This is a very straightforward workshop and I enjoyed doing it. 
