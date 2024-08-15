@@ -1,0 +1,54 @@
+/*
+--------------------------------------------------------------------
+Name           : Abdullah Al Mahfuz
+Email          : aamahfuz@myseneca.ca
+Student ID     : 180377236
+Section        : ZFF
+Date           : 14 July 2024 (Sunday)
+
+Authenticity Declaration:
+I have done all the coding by myself and only copied the code that
+my professor provided to complete my workshops and assignments.
+--------------------------------------------------------------------
+*/
+
+In this workshop, I created a hierarchy of classes to gain practical understanding of virtual functions and abstract base classes in C++. The workshop was structured around four classes, "Shape", "LblShape", "Line", "Rectangle". Each class played a distinct role, from serving as an interface to rendering concrete shapes on the screen. This exercise helped me grasp several crucial concepts in OOP, particularly in the context of C++. Some of the most crucial concepts that i learned through this workshop are-
+
+Defining Pure Virtual Functions- The fist task was to define pure virtual functions is declared by assigning "0" to its prototype within the class definition. This makes the class abstract, meaning it can not be initiated on its own. Instead it serves as a blueprint for derived classes. The Shape class was created as an interface with two pure virtual functions- "draw" and "getSpecs". This design choice ensured that any derived class would have to implement these functions, providing a consistent interface for all shapes. 
+class Shape {
+public:
+    virtual void draw(std::ostream&) const = 0;
+    virtual void getSpecs(std::istream&) = 0;
+    virtual ~Shape() = default;
+};
+
+Creating Abstract Base Classes- I developed LblShape as a class which was inherited from "Shape". This class added a label to a shape, demonstrating how to extend an abstract base class while keeping it abstract. LblShape class introduced a private member "m_label" and provided implementations for the "getSpecs" function while leaving "draw" as a pure virtual function. This kept "LblShape" abstract, as it still could not be instantiated directly. 
+class LblShape : public Shape {
+private:
+    char* m_label;
+protected:
+    const char* label() const;
+public:
+    LblShape();
+    LblShape(const char*);
+    LblShape(const LblShape&) = delete;
+    LblShape& operator=(const LblShape&) = delete;
+    ~LblShape();
+    void getSpecs(std::istream&) override;
+};
+
+Implementing Behaviour Using Virtual Functions- Implementing "Line" and "Rectangle" classes involved concrete definitions for the virtual functions defined in "Shape" and "LblShape".. This step was crucial in understanding how virtual functions enable polymorphic behaviour. The Line class inherited from "LblShape" and implemented the draw function to render a horizontal line on the screen with a label. It also provided a concrete implementation of getSpecs.
+class Line : public LblShape {
+private:
+    int m_length;
+public:
+    Line();
+    Line(const char*, int);
+    void getSpecs(std::istream&) override;
+    void draw(std::ostream&) const override;
+};
+
+the Rectangle class also had a similar definition. It also helped me understand the difference between Abstract base class and concrete class. An abstract base class cannot be instantiated and is used to define a common interface for its derived classes. It can include pure virtual functions that derived classes must implement. Conversely, a concrete class provides implementations for all its inherited pure virtual functions, making it possible to create instances of the class.
+Abstract Base Class Example: Shape and LblShape are abstract because they contain pure virtual functions.
+Concrete Class Example: Line and Rectangle are concrete because they provide implementations for all inherited pure virtual functions.
+In this workshop i had some trouble matching the exact output due to some spaces and line output not matching. But other than that, everything was OK. 
