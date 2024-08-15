@@ -1,0 +1,26 @@
+/*
+--------------------------------------------------------------------
+Name           : Abdullah Al Mahfuz
+Email          : aamahfuz@myseneca.ca
+Student ID     : 180377236
+Section        : ZFF
+Date           : 11 June 2024 (Tuesday)
+
+Authenticity Declaration:
+I have done all the coding by myself and only copied the code that
+my professor provided to complete my workshops and assignments.
+--------------------------------------------------------------------
+*/
+
+This workshop mainly focused on operator overloading and helper functions in a partially developed class called 'Account'. This included binary member operators, type conversion operators, unary member operators, and helper functions. During this workshop i implemented binary member operators such as '+=', '-=', '<<', and '>>' to manage account balances and transfer funds between accounts as well as maintaining a left and right account in accordance with the instructions. I learned how to ensure these operations only occure in valid conditions, such as when an account is valid(5 digits) and the amounts are non-negative.
+I have also learned to use type conversion specifiers that allow implicit conversion of 'Account' objects to integers and doubles. I understood the importance of these conversions in making the class more flexible and easier to use arithmatic expressions and comparisons. 
+I had implemented a unary member operator '~' to check if an account is new (not yet set) which in turn simplified the logic and made the code more readable. 
+The newest this that i learned was using helper functions. I used two helper binary operators (operator '+' and operator '+=') to perform operations involbing two 'Accounts' objects or an 'Account' object and a premitive type. I had more practice with the *this object. Almost all function implementation had it and i got to practice a lot more with it. 
+I had some issues and difficulties while accessing the private members ('m_number' and 'm_balance') in the helper functions. The compiler gave me errors when i tried to access it directly. In order to solve the issue,i created the getter function called (getBalance()) inside the 'Account' class which provided access to these members all while maintaining encapsulation. I also faced some difficulty with understanding the predence and associativity of overloaded operators. I had to be very careful about structuring the expressions and consulting C++ documentation on operator precedence. However, the most tricky logics for the workshop was using '<<' and '>>' operators. Ensuring that the source account balance was correctly updated and displayed was crucial. 
+Minus those difficulties, this was a pretty straight forward project. I didn't have to format the output at all. Usually the formatting of the outputs give out a lot of errors in during the matrix submission (i.e. the output should be empty line ASCII code (...) but your output is space ASCII code (...) to name just one. So once i got the logic proper, the work submission was smooth. Completing this workshop provided valuable hands on experience with operator overloading and more use of *this object. The tasks enhanced my understanding of how to create intuitive and flexible interfaces for classes, making them easier to use in a variety of contexts. Despite encountering challenges, particularly with access control and validation logic, the process of resolving these issues deepened my comprehension of C++'s capabilities and best practices. This workshop has significantly improved my ability to design and implement robust class interfaces using operator overloading.
+
+
+
+
+
+
