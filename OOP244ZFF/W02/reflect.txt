@@ -1,0 +1,32 @@
+/*                        
+--------------------------------------------------------------------
+Name           : Abdullah Al Mahfuz
+Email          : aamahfuz@myseneca.ca
+Student ID     : 180377236
+Section        : ZFF
+Date           : 12 May 2024 (Sunday)
+
+Authenticity Declaration:
+I have done all the coding by myself and only copied the code that
+my professor provided to complete my workshops and assignments.
+--------------------------------------------------------------------
+*/
+
+My learning journal. 
+1. Dynamic memory Allocation: Dynamic memory allocation allows programs to request memory at runtime, which provides flexibility to handle varying amounts of data efficiently. In this workshop, I utilized dynamic memory allocation to manage an array of 'Employee' structures. I used the "new" keyword to dynamically allocate memory for my usage(i.e employees = new Employee[noOfEmployees];). This allocation is based on the number of employee records retrieved from the "employee.csv" file. Each employee's name was dynamically allocated memory to store the string read from the file. After i am done with my need, I must also make sure that the memory is released back to the OS. Otherwise, there will be memory leaks and the software would crash. I deallocate using the "delete[]" keyword. I created a specific function just to release the memory called "deallocateMemory()" and it has the following implementation-
+
+    int i;
+
+    for (i = 0; i < noOfEmployees; ++i) {
+        delete[] employees[i].m_name;
+    }
+    delete[] employees;
+}
+This way, each employee's name (a dynamically allocated array of characters) was also deallocated eventually. 
+The employee array uses 'openFile' and 'closeFile' functions to manage file access, while 'noOfRecords' counts the records.
+
+2. Function Overloading: In the workshop, i used 2 overloaded functions (load, display). Function overloading allows multiple functions to have the same name but different parameters. The load function- was overloaded to handle both individual employee records and the entire array of employees { bool load(Employee& emp); // for single employee & bool load() // for all the employee records on file }. The display function- was overloaded to print the individual employee records and all the employee records in a very specific format {void display(const Employee& emp); // for a single employee & void display(); //for all the employees }. Also the overloaded 'read' functions handles different types of data from the file (characters, integers, floats) "bool read(char*name); & bool read(int& empNo); & bool read(double& salary);" the first read uses address to access or modify the original value while the other 2 uses reference to that location to do the same. 
+
+3. References: the load and display function for a single employee record uses reference parameter to directly modify and display the employee object (bool load(Employee& emp); & void display(const Employee& emp);). This allowed me to update and display the 'Employee' structure with data read from the file without returning it. Using references is more efficient than copying large objects as it avoids the overhead or creating copies. It helps with the performance as the program grows larger. 
+
+By implementing functions that load, display, and manage employee records from a file I learned to implement efficient memory allocation and most crucially, deallocation of the memory. C++ isn't a garbage collecting language and so i must let go of the memory that i requested from the OS on runtime. While working on this workshop, i didn't have severe difficulty as the instructions were more than sufficient for me to work with. The comments above the functions implementation were helpful enough.
