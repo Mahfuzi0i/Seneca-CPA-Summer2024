@@ -1,0 +1,5 @@
+[INFO Thu Jun 13 09:02:58 2024]: Input value 2
+[INFO Thu Jun 13 09:09:03 2024]: Input value 2
+[INFO Thu Jun 13 17:42:25 2024]: Number of Lines found: 4
+[INFO Thu Jun 13 17:42:25 2024]: Number of words found: 28
+[INFO Thu Jun 13 17:42:25 2024]: Number of numbers found: 6
