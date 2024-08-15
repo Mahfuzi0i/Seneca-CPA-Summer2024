@@ -1,0 +1,5 @@
+﻿  customer.c
+A:\Academic activity\Summer 2024\SFT221\week3\Workshop3\MySolution\customer.c(19,26): warning C4047: '==': 'int' differs in levels of indirection from 'char [2]'
+A:\Academic activity\Summer 2024\SFT221\week3\Workshop3\MySolution\customer.c(19,53): warning C4047: '==': 'char [50]' differs in levels of indirection from 'int'
+A:\Academic activity\Summer 2024\SFT221\week3\Workshop3\MySolution\customer.c(40,48): warning C4047: '==': 'char [50]' differs in levels of indirection from 'int'
+  MySolution.vcxproj -> A:\Academic activity\Summer 2024\SFT221\week3\Workshop3\x64\Debug\MySolution.exe
