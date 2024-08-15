@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Request a New Artist</title>
+    <link rel="stylesheet" href="./css/water.css" />
+  </head>
+  <body class="request-body">
+    <header>
+      <nav class="home-nav">
+        <a href="index.html">Home</a>
+      </nav>
+      <h1>Request a New Artist</h1>
+    </header>
+    <hr />
+    <main>
+      <form
+        id="request-artist-form"
+        action="https://httpbin.org/post"
+        method="post"
+        onsubmit="return validateForm()"
+      >
+        <label for="artist-name">Artist's Name:</label>
+        <div>
+          <input
+            type="text"
+            id="artist-name"
+            name="artis-tName"
+            placeholder="Please type the artist name"
+            required
+          />
+        </div>
+
+        <label for="genre">Music Genre:</label>
+        <div>
+          <input
+            list="genres"
+            id="genre"
+            name="genre"
+            placeholder="Please select the genre of music or add your own"
+            required
+          />
+          <datalist id="genres">
+            <option value="Pop"></option>
+            <option value="Rock"></option>
+            <option value="Hip Hop"></option>
+            <option value="Punk rock"></option>
+            <option value="Disco"></option>
+            <option value="Classical"></option>
+            <option value="Electronic"></option>
+            <option value="K-pop"></option>
+            <option value="Country"></option>
+            <option value="Salsa music"></option>
+          </datalist>
+        </div>
+
+        <label for="social-media">Social Media URLs:</label>
+        <div id="social-media-container">
+          <input
+            type="url"
+            id="social-media"
+            name="socialMediaUrls"
+            placeholder="Please enter social media url/s"
+            required
+          />
+        </div>
+        <div id="url-button1">
+          <button type="button" class="url-button1" onclick="addSocial()">Add URL</button>
+        </div>
+
+        <label for="song-video"> Song/Video URLs:</label>
+        <div id="song-video-container">
+          <input
+            type="url"
+            id="song-video"
+            name="songVideoUrls"
+            placeholder="Please enter any song or video url/s..."
+            required
+          />
+        </div>
+        <div id="url-button2">
+          <button type="button" class="url-button2" onclick="addVideo()">Add URL</button>
+        </div>
+
+        <div class="explicit-check">
+          <label>Contains explicit Content?</label>
+
+          <input type="radio" id="explicit-yes" name="explicit" value="YES" required />
+          <label for="explicit-yes">Yes</label>
+
+          <input type="radio" id="explicit-no" name="explicit" value="NO" required />
+          <label for="explicit-no">No</label>
+        </div>
+
+        <label for="description"
+          >Please give us a brief explanation why this artist would be a good addition:</label
+        >
+        <textarea
+          id="description"
+          placeholder="Type here...A minimum of 50 characters required"
+          name="description"
+          rows="5"
+        ></textarea>
+
+        <button class="submit-button" type="submit">SUBMIT</button>
+      </form>
+    </main>
+
+    <footer id="request-footer">
+      <p>&copy; <time datetime="2024">2024</time> Abdullah Al Mahfuz.</p>
+    </footer>
+    <script src="./js/request.js"></script>
+  </body>
+</html>

@@ -1,0 +1,369 @@
+/* style.css */
+/* Had to use water.css as the name of the css 
+because I copied assignment 4 as per the instruction 
+and npm only executes water.css 
+water.css has been totally modified for my assignment purposes. 
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+header {
+  text-align: center;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(230, 227, 210);
+  color: rgb(0, 0, 0);
+}
+
+#menu {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+button {
+  background-color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  color: rgb(0, 0, 0);
+  width: 100px;
+  height: 45px;
+  border: solid;
+  border-radius: 15px;
+  border-color: #e2dea9;
+}
+
+button:hover {
+  background-color: rgb(0, 0, 0);
+  color: orange;
+  cursor: pointer;
+}
+
+#selected-artist {
+  display: flex;
+  justify-content: center;
+}
+
+.artist-info {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#request {
+  text-align: center;
+  border: #ecdd6d solid 2px;
+  border-radius: 15px;
+}
+
+.artist-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  padding: 10px;
+  object-fit: cover; /* This will make sure the image covers the area without stretching */
+}
+
+.artist-name-socials {
+  padding-top: 2.5em;
+  padding-bottom: 15px;
+  padding-left: 10px;
+}
+
+.artist-name {
+  font-size: 1em;
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+.socials {
+  display: flex;
+  flex-direction: row;
+}
+
+.social-link-image {
+  width: 30px;
+  height: 30px;
+  padding-right: 10px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #ffffff;
+  border-radius: 30px;
+  padding: 16px;
+  width: 210px;
+  height: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  background-color: rgb(225, 219, 219);
+  .card-title {
+    color: orange;
+  }
+  .card-year {
+    color: orange;
+  }
+  .card-duration {
+    color: orange;
+  }
+  cursor: pointer;
+}
+
+.card-image {
+  width: auto;
+  height: auto;
+  border-radius: 50px;
+}
+
+.card-title {
+  font-size: 1.2em;
+  text-align: left;
+  color: #000000;
+  text-decoration: none;
+}
+
+.card-year-duration {
+  float: left;
+}
+.card-year {
+  font-size: 0.9em;
+  color: #000000;
+  margin-top: auto;
+}
+
+.card-duration {
+  font-size: 0.9em;
+  color: #000000;
+  text-align: left;
+}
+
+/*Assignment 6 additions and modifications */
+#index-footer {
+  background-color: antiquewhite;
+  color: #000000;
+  padding: 20px;
+  text-align: center;
+  border-top: 2px solid #ff7751;
+  border-radius: 50px;
+  margin-top: 30px;
+}
+#index-footer p {
+  text-align: center;
+  font-size: 1em;
+  color: #000000;
+}
+
+#newsletter h2 {
+  font-size: 1.5em;
+}
+
+#newsletter p {
+  font-size: 1em;
+  margin: 50px 20px;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+#newsletter-form {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 2em;
+  gap: 25px;
+  justify-content: center;
+  display: inline-block;
+}
+
+#newsletter-form label {
+  font-size: 1em;
+}
+
+#newsletter-form input[type="email"] {
+  padding: 10px;
+  width: 250px;
+  border: 1px solid #ff7751;
+  border-radius: 10px;
+  color: #000000;
+}
+
+#newsletter-form button {
+  background-color: #ff7751;
+  color: #ffffff;
+  height: 40px;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#newsletter-form button:hover {
+  background-color: #c8bccb;
+  color: orange;
+}
+
+/* For the request new artist*/
+/*----- New artist form-----------*/
+.request-body {
+  background-color: rgb(230, 227, 210);
+}
+
+.request-artist {
+  text-align: center;
+  padding: 20px;
+}
+
+.request-artist a {
+  text-decoration: none;
+  font-size: 0.9em;
+  padding: 10px 20px;
+  color: rgb(0, 0, 0);
+  border: 2px solid #f1f59d;
+  border-radius: 10px;
+  background-color: #ffffff;
+  display: inline-block;
+}
+
+.request-artist a:hover {
+  color: orange;
+  background-color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+.home-nav {
+  text-decoration: none;
+  padding-top: 30px;
+}
+
+.home-nav a {
+  text-decoration: none;
+  font-size: 0.9em;
+  padding: 10px 50px;
+  color: rgb(0, 0, 0);
+  border: 2px solid rgb(230, 227, 210);
+  border-radius: 10px;
+  background-color: #ffffff;
+  display: inline-block;
+}
+
+.home-nav a:hover {
+  background-color: rgb(176, 30, 229);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+#request-artist-form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 20px 150px;
+  border-radius: 20px;
+  margin-top: 40px;
+}
+
+#request-form label {
+  font-size: 1em;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+form input,
+form textarea,
+form datalist {
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  font-family: "Manrope", sans-serif;
+}
+
+input[name="socialMediaUrls"] {
+  margin-top: 5px;
+}
+
+input[name="songVideoUrls"] {
+  margin-top: 5px;
+}
+
+form button {
+  font-family: "Manrope", sans-serif;
+}
+
+.url-button1 {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  display: inline-block;
+  border: none;
+  height: 12%;
+  width: 40%;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.url-button1:hover {
+  background-color: rgb(176, 30, 229);
+  color: white;
+}
+.url-button2 {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  display: inline-block;
+  border: none;
+  height: 12%;
+  width: 40%;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.url-button2:hover {
+  background-color: rgb(176, 30, 229);
+  color: white;
+}
+
+.explicit-check {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+/*This changes the size of the radio*/
+.explicit-check input[type="radio"] {
+  width: 25px;
+}
+
+.submit-button {
+  align-self: center;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border: none;
+  width: 30%;
+  margin-top: 15px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.submit-button:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(176, 30, 229);
+}
+
+form textarea {
+  font-family: "Manrope", sans-serif;
+}
+
+#request-footer {
+  margin-top: 30px;
+  background-color: antiquewhite;
+  border-radius: 15px;
+  text-align: center;
+  padding: 30px;
+}
